@@ -12,7 +12,7 @@ We created one folder per type of experiment. We then included subfolders or lin
 ### Type of experiment performed
 
 |Folder|Name|Description|Number of cells|
-|--|--|--|
+|---|---|---|
 |exp1_100s_PR|**100s pull-releases**|Experiments in which the magnet was added/removed every 100s, several times in a row |1|
 |exp2_30m_PR|**30min pull-releases**|Experiments in which the magnet was added/removed every 100s|8|
 |exp3_forcefield|**Force field calibration & simulation**|Experiments to calibrate the force field & computer simulations around the pillar|
