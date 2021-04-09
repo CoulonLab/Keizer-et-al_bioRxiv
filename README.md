@@ -1,8 +1,7 @@
 # Keizer et al.
 Supporting data, software and documentation for the study by Keizer et al.
 
-In vivo manipulation of a genomic locus
-reveals the mechanical properties of interphase chromatin
+*In vivo manipulation of a genomic locus reveals the mechanical properties of interphase chromatin*
 
 Veer I. P. Keizer^1,2,3,#, Simon Grosse-Holz4, Maxime Woringer1,2, Laura Zambon1,2,3, Koceila Aizel2, Maud Bongaerts2, Lorena Kolar-Znika1,2, Vittore F. Scolari1,2, Sebastian Hoffmann3, Edward J. Banigan4, Leonid A. Mirny4, Maxime Dahan2,§, Daniele Fachinetti3,* & Antoine Coulon1,2,*,¶
 
