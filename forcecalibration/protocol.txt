@@ -1,0 +1,21 @@
+20200320 AC
+
+File `output/20190724_array1_ferritinJuly24_batch_1in10fromdil_allPillars_z1cov_Fxyz_mask_reg7.tif`
+
+Channels are:
+1. Force in the x direction
+2. Force in the y direction
+3. Force in the z direction (note: inaccurate due to bleaching)
+4. GFP image, after flat-field correction and normalization by TMR channel
+5. Masks where force estimation is expected to be accurate
+6. Manually-placed landmark to locate and register the tip of the pillars
+
+
+Procedure to produce his file:
+- Each field of view was generated using scripts `computeForceField_v1.1.10.ijm` and `makeForceFieldMask_v1.0.1.ijm` (see instructions therein) and concatenated together.
+- A 6th channel was added with black (0 filled) frames and a pixel was set to a non-0 value on the z-plane of the surface of the coverglass, at a location to identify the tip of the pillar (i.e. the corner of the square if the pillar was a perfect square)
+- The different images were then registered on this landmark using the 'Correct 3D drift` Fiji plugin
+- z-planes below the coverglass and much above the top of the pillar were removed.
+
+This tif file can be used as an input for the calibration of the simulated force map.
+

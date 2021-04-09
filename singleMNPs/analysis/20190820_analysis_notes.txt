@@ -1,0 +1,47 @@
+2021/01/21 AC
+2021/02/22 AC
+2021/04/08 AC
+
+Analysis of data/Veer/20190820 for estimating single MNP fluorescence intensity
+===============================================================================
+
+"Standard" imaging conditions of our usual experiments are
+gain=30
+exposure=100ms
+SpectraX-Cyan=5%
+
+From previous measurements, we confirmed that fluo intensity scales linearly with exposure  time and with gain. For the SpectraX illumination intensity, we determined with a powermeter that 
+- SpectraX-Cyan=4%   => power=15.87mW => ratio=0.875
+- SpectraX-Cyan=5%   => power=18.14mW => ratio=1 (reference)
+- SpectraX-Cyan=100% => power=133.3mW => ratio=7.35
+
+To convert a measured fluo intensity into the "standard" imaging conditions:
+fluo_std = fluo_nonStd / SpectraX-Cyan-ratio * 100/exposure * 30/gain
+
+--------------
+In Veer/20190820, all the data take with the SpectraX are
+gain=100
+exposure=5ms
+SpectraX-Cyan=100%
+
+==> fluo_std = fluo_20190820 * 0.816 <==
+
+--------------
+Strategy to analyze Veer/20190820:
+For data taken with SpectraX: Use `tBin_offset_normalize.ijm` macro to
+- crop cell of interest
+- time-bin images 10 by 10
+- Offset the background (using 30x30 rectangle in the background) 
+- Normalize intensity of each frame using the same value to correct for bleaching.
+
+Notes: Binning is done by *averaging* images 10 by 10 together, so the measured intensities are the same as on individual frames (not 10x higher). Normalization is done so that the first frame is unaffected and only the subsequent ones are corrected.
+
+Then, use `make_avg_particle.ijm` script on the time-binned normalized tif.
+- Select area in which particles are visible and well-isolated (i.e. low background). Ideal case is particles in the cytoplasm, far from the nucleus, where the cytoplasm is thin, so that particles stay in the focal volume.
+- If there are static objects, exclude them from the mask
+- Run the script, which
+  - detects spots (local maxima above threshold in bpassed image)
+  - computes an average particle image (using the non-bpassed images)
+  - computes an average control image (same position of particles, but using another frames)
+  - takes the different between particle and control images
+

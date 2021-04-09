@@ -1,0 +1,23 @@
+20190820 VK
+
+[Edited 20210408 AC]
+
+Plated fluorodish 2019-08-19 with U2OS cell expressing tetR-mcherry-aGFPnb (polyclonal population).
+
+Put cells on the microscope (10:45) with the lid.
+
+Ferritin batch h (thawed 12/8/2019). Spin down 3 min at 6680 rpm. Transfered supernatant in new tube on ice.
+
+
+Current settings:
+SpectraX Cyan channel (GFP-ferritin) 100%
+SpectraX Green channel (tetR-mCherry) 20%
+Camera gain: 100
+
+Objective 100x
+
+Placed and adjusted field stop to make illuminated region smaller that the field of view.
+
+GFP 5 ms exposure time, interval 0s.
+no Z-stack.
+
