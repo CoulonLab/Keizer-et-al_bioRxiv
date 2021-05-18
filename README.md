@@ -3,7 +3,7 @@
 Data, software and documentation to reproduce the results from [Keizer et al](https://www.biorxiv.org/content/10.1101/2021.04.20.439763v1).
 
 ## Publication status
-The study [Keizer et al.](https://www.biorxiv.org/content/10.1101/2021.04.20.439763v1) available as a preprint. It has not yet been peer reviewed and is not yet published in a journal.
+The study [Keizer et al.](https://www.biorxiv.org/content/10.1101/2021.04.20.439763v1) is available as a preprint. It has not yet been peer reviewed and is not yet published in a journal.
 
 ## Data re-use policy
 As [standard practice in the field](https://www.4dnucleome.org/policies.html), researchers using this public, but as yet unpublished data must contact the specific data producer (antoine.coulon@curie.fr) to discuss possible coordinated publication. Unpublished data are those that have never been described and referenced by a peer-reviewed publication.
