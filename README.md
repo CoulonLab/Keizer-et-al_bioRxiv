@@ -1,5 +1,8 @@
 # Keizer et al. – Live-cell micromanipulation of a genomic locus reveals interphase chromatin mechanics
 
+### Note: this repository will be updated upon publication of the article. If you are a reviewer, please use the link in Table S2 to access the future content of this repository. 
+
+-------------
 Data, software and documentation to reproduce the results from [Keizer et al](https://www.biorxiv.org/content/10.1101/2021.04.20.439763v1).
 
 ## Publication status
